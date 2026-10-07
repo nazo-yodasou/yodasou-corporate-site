@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>お問い合わせ｜株式会社Yodasou</title>
+<meta name="description" content="株式会社Yodasouへのお問い合わせはこちら。謎解き公演に関するご質問や、自治体・企業向け謎解き制作のご相談をフォームより承ります。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&amp;family=Noto+Sans+JP:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0E0D0B}
+a{color:#D9B86C}a:hover{color:#F0D693}
+.y-root{font-family:'Noto Sans JP','Hiragino Sans',sans-serif;color:#ECE6D6;background-color:#0E0D0B;background-image:linear-gradient(rgba(201,165,92,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(201,165,92,.045) 1px,transparent 1px);background-size:56px 56px;line-height:1.85;font-size:15px;letter-spacing:.03em}
+.y-wrap{max-width:1160px;margin:0 auto;padding:0 20px;box-sizing:border-box}
+.y-h{font-family:'Shippori Mincho','Yu Mincho',serif;font-weight:700;letter-spacing:.06em;text-wrap:balance}
+.y-eyebrow{margin:0;font-family:'Shippori Mincho','Yu Mincho',serif;color:#C9A55C;letter-spacing:.32em;font-size:12px}
+.y-muted{color:#A8A08C}
+.y-header{position:sticky;top:0;z-index:10;background:rgba(14,13,11,.94);border-bottom:1px solid rgba(201,165,92,.28)}
+.y-header-in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:0 24px;padding-top:6px;padding-bottom:6px}
+.y-logo{display:flex;gap:10px;min-height:48px;align-items:center;text-decoration:none;color:#ECE6D6;font-family:'Shippori Mincho',serif;font-weight:700;font-size:22px;letter-spacing:.28em}
+.y-logo small{font-family:'Noto Sans JP',sans-serif;font-weight:400;font-size:10px;letter-spacing:.12em;color:#A8A08C}
+.y-logo:hover{color:#C9A55C}
+.y-nav{display:flex;gap:2px;overflow-x:auto;max-width:100%;margin:0 -10px}
+.y-nav a{display:flex;align-items:center;min-height:44px;padding:0 10px;color:#ECE6D6;text-decoration:none;font-size:13px;white-space:nowrap}
+.y-nav a:hover,.y-nav a[aria-current="page"]{color:#C9A55C}
+.y-pagehead{position:relative;overflow:hidden;padding:72px 0 64px;border-bottom:1px solid rgba(201,165,92,.28)}
+.y-pagehead::before{content:"";position:absolute;right:-80px;top:-80px;width:360px;height:360px;border:1px solid rgba(201,165,92,.22);border-radius:50%;box-shadow:0 0 0 30px rgba(201,165,92,.0),0 0 0 31px rgba(201,165,92,.14)}
+.y-h1{font-size:clamp(32px,6vw,54px);margin:14px 0 0;line-height:1.35}
+.y-lead{max-width:640px;margin:20px 0 0;color:#D6CFBE}
+.y-sec{padding:80px 0}
+.y-btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:56px;padding:0 48px;border:1px solid #C9A55C;color:#C9A55C;text-decoration:none;font-family:'Shippori Mincho',serif;font-weight:700;font-size:16px;letter-spacing:.2em;cursor:pointer;transition:background .3s,color .3s}
+.y-btn--fill{background:#C9A55C;color:#0E0D0B}
+.y-btn--fill:hover{background:#E2C27A;color:#0E0D0B}
+.y-btn:focus-visible{outline:2px solid #ECE6D6;outline-offset:3px}
+.y-footer{border-top:1px solid rgba(201,165,92,.28);background:#0A0908;padding:56px 0 28px}
+.y-footer-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px}
+.y-fnav{display:grid;grid-template-columns:repeat(2,auto);gap:0 32px}
+.y-fnav a{display:flex;align-items:center;min-height:40px;color:#ECE6D6;text-decoration:none;font-size:13px}
+.y-fnav a:hover{color:#C9A55C}
+.y-copy{margin-top:40px;font-size:11px;color:#A8A08C;letter-spacing:.1em}
+.y-fade{animation:yFade 1s ease both}
+.y-d1{animation-delay:.15s}.y-d2{animation-delay:.3s}
+@keyframes yFade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.y-fade{animation:none}.y-btn{transition:none}}
+@media (min-width:768px){.y-root{font-size:16px}.y-sec{padding:120px 0}.y-wrap{padding:0 40px}.y-fnav{grid-template-columns:repeat(3,auto)}.y-pagehead{padding:112px 0 96px}}
+.c-form{position:relative;display:flex;flex-direction:column;gap:28px;padding:40px 24px;background:#16140F;border:1px solid rgba(201,165,92,.32)}
+.c-form::before,.c-form::after{content:"";position:absolute;width:14px;height:14px;border-color:#C9A55C;border-style:solid;pointer-events:none}
+.c-form::before{top:-1px;left:-1px;border-width:2px 0 0 2px}
+.c-form::after{bottom:-1px;right:-1px;border-width:0 2px 2px 0}
+.c-field{display:flex;flex-direction:column;gap:10px}
+.c-field label{font-family:'Shippori Mincho',serif;font-weight:700;letter-spacing:.12em;font-size:15px}
+.c-input{width:100%;box-sizing:border-box;min-height:52px;padding:12px 16px;font:inherit;font-size:16px;color:#ECE6D6;background:#0E0D0B;border:1px solid rgba(201,165,92,.4);border-radius:0;appearance:none}
+.c-input::placeholder{color:#7D7666}
+.c-input:focus{outline:none;border-color:#C9A55C;box-shadow:0 0 0 3px rgba(201,165,92,.25)}
+.c-select{background-image:linear-gradient(45deg,transparent 50%,#C9A55C 50%),linear-gradient(135deg,#C9A55C 50%,transparent 50%);background-position:calc(100% - 22px) 50%,calc(100% - 16px) 50%;background-size:6px 6px;background-repeat:no-repeat;padding-right:44px}
+textarea.c-input{min-height:200px;resize:vertical;line-height:1.8}
+@media (min-width:768px){.c-form{padding:56px 56px}}
+</style>
+</head>
+<body>
+<div class="y-root">
+
+<header class="y-header">
+<div class="y-wrap y-header-in">
+<a href="index.html" class="y-logo">YODASOU<small>株式会社Yodasou</small></a>
+<nav aria-label="グローバルナビゲーション" class="y-nav">
+<a href="index.html">トップ</a>
+<a href="about.html">会社概要</a>
+<a href="faq.html">よくある質問</a>
+<a href="contact.html" aria-current="page">お問い合わせ</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="y-pagehead">
+<div class="y-wrap" style="position: relative">
+<p class="y-eyebrow y-fade">CONTACT</p>
+<h1 class="y-h y-h1 y-fade y-d1">お問い合わせ</h1>
+<p class="y-lead y-fade y-d2">公演に関するご質問、謎解き制作のご相談など、下記フォームよりお気軽にお寄せください。<br>よくあるご質問は<a href="faq.html">こちら</a>にまとめています。</p>
+</div>
+</section>
+
+<section class="y-sec">
+<div class="y-wrap" style="max-width: 820px">
+<form class="c-form" aria-label="お問い合わせフォーム">
+<div class="c-field">
+<label for="f-company">会社名</label>
+<input id="f-company" name="company" type="text" class="c-input" autocomplete="organization">
+</div>
+<div class="c-field">
+<label for="f-name">氏名</label>
+<input id="f-name" name="name" type="text" class="c-input" autocomplete="name">
+</div>
+<div class="c-field">
+<label for="f-email">メールアドレス</label>
+<input id="f-email" name="email" type="email" class="c-input" autocomplete="email" inputmode="email" placeholder="example@example.com">
+</div>
+<div class="c-field">
+<label for="f-tel">電話番号</label>
+<input id="f-tel" name="tel" type="tel" class="c-input" autocomplete="tel" inputmode="tel" placeholder="03-0000-0000">
+</div>
+<div class="c-field">
+<label for="f-type">お問い合わせ種別</label>
+<select id="f-type" name="type" class="c-input c-select">
+<option value="">選択してください</option>
+<option value="event">公演・イベントについて</option>
+<option value="production">謎解き制作のご依頼・ご相談</option>
+<option value="media">取材・メディア関係</option>
+<option value="other">その他</option>
+</select>
+</div>
+<div class="c-field">
+<label for="f-body">お問い合わせ内容</label>
+<textarea id="f-body" name="body" class="c-input"></textarea>
+</div>
+<div style="display: flex; justify-content: center; padding-top: 12px">
+<button type="button" class="y-btn y-btn--fill">送信する</button>
+</div>
+</form>
+</div>
+</section>
+</main>
+
+<footer class="y-footer">
+<div class="y-wrap y-footer-in">
+<div>
+<a href="index.html" class="y-logo">YODASOU<small>株式会社Yodasou</small></a>
+<p class="y-muted" style="margin: 12px 0 0; font-size: 13px; line-height: 1.9">〒102-0073<br>東京都千代田区九段北１丁目１４−２０ Fit九段ビル</p>
+</div>
+<nav aria-label="フッターナビゲーション" class="y-fnav">
+<a href="index.html">トップ</a>
+<a href="about.html">会社概要</a>
+<a href="faq.html">よくある質問</a>
+<a href="contact.html">お問い合わせ</a>
+</nav>
+</div>
+<p class="y-wrap y-copy">© 株式会社Yodasou</p>
+</footer>
+
+</div>
+</body>
+</html>

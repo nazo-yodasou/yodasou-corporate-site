@@ -1,6 +1,10 @@
 # 株式会社Yodasou コーポレートサイト
 
-Claude の Design キャンバスで作成したコーポレートサイトとイベントキービジュアルのソースです。
+Claude の Design キャンバスで作成したコーポレートサイトとイベントキービジュアルです。
+
+公開URL: https://nazo-yodasou.github.io/yodasou-corporate-site/
+
+ルートの `index.html` などは `python3 build.py` で `project/` から生成した静的HTMLです。デザインを変更したら `project/` を更新して再生成してください。
 
 ## ページ
 

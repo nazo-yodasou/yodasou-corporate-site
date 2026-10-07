@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>株式会社Yodasou｜謎解きで、街の物語を掘り起こす</title>
+<meta name="description" content="株式会社Yodasouは、周遊型謎解き・オンライン謎解き・自治体や企業向けの謎解き制作を手がける会社です。累計参加者100万人以上。街の魅力を物語に変え、ご家族から謎解き好きの方まで楽しめる体験をお届けします。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&amp;family=Noto+Sans+JP:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0E0D0B}
+a{color:#D9B86C}a:hover{color:#F0D693}
+.y-root{font-family:'Noto Sans JP','Hiragino Sans',sans-serif;color:#ECE6D6;background-color:#0E0D0B;background-image:linear-gradient(rgba(201,165,92,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(201,165,92,.045) 1px,transparent 1px);background-size:56px 56px;line-height:1.85;font-size:15px;letter-spacing:.03em}
+.y-wrap{max-width:1160px;margin:0 auto;padding:0 20px;box-sizing:border-box}
+.y-h{font-family:'Shippori Mincho','Yu Mincho',serif;font-weight:700;letter-spacing:.06em;text-wrap:balance}
+.y-eyebrow{margin:0;font-family:'Shippori Mincho','Yu Mincho',serif;color:#C9A55C;letter-spacing:.32em;font-size:12px}
+.y-muted{color:#A8A08C}
+.y-header{position:sticky;top:0;z-index:10;background:rgba(14,13,11,.94);border-bottom:1px solid rgba(201,165,92,.28)}
+.y-header-in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:0 24px;padding-top:6px;padding-bottom:6px}
+.y-logo{display:flex;gap:10px;min-height:48px;align-items:center;text-decoration:none;color:#ECE6D6;font-family:'Shippori Mincho',serif;font-weight:700;font-size:22px;letter-spacing:.28em}
+.y-logo small{font-family:'Noto Sans JP',sans-serif;font-weight:400;font-size:10px;letter-spacing:.12em;color:#A8A08C}
+.y-logo:hover{color:#C9A55C}
+.y-nav{display:flex;gap:2px;overflow-x:auto;max-width:100%;margin:0 -10px}
+.y-nav a{display:flex;align-items:center;min-height:44px;padding:0 10px;color:#ECE6D6;text-decoration:none;font-size:13px;white-space:nowrap}
+.y-nav a:hover,.y-nav a[aria-current="page"]{color:#C9A55C}
+.y-sec{padding:80px 0}
+.y-sechead{margin-bottom:44px}
+.y-sechead::after{content:"";display:block;width:56px;height:1px;background:#C9A55C;margin-top:20px}
+.y-h2{font-size:clamp(26px,4vw,38px);margin:10px 0 0;line-height:1.45}
+.y-grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:24px}
+.y-card{position:relative;background:#16140F;border:1px solid rgba(201,165,92,.32);display:flex;flex-direction:column}
+.y-card::before,.y-card::after{content:"";position:absolute;width:14px;height:14px;border-color:#C9A55C;border-style:solid;pointer-events:none}
+.y-card::before{top:-1px;left:-1px;border-width:2px 0 0 2px}
+.y-card::after{bottom:-1px;right:-1px;border-width:0 2px 2px 0}
+.y-tag{display:inline-flex;align-items:center;padding:2px 10px;font-size:11px;letter-spacing:.12em;border:1px solid rgba(201,165,92,.6);color:#C9A55C}
+.y-tag--fill{background:#C9A55C;color:#0E0D0B;border-color:#C9A55C}
+.e-meta{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 14px;font-size:13px}
+.e-meta dt{color:#C9A55C;letter-spacing:.1em}
+.e-meta dd{margin:0;color:#A8A08C}
+.e-sub{margin:0 0 20px;font-family:'Shippori Mincho',serif;font-weight:700;font-size:18px;letter-spacing:.12em;display:flex;align-items:center;gap:12px}
+.e-sub::before{content:"";flex:none;width:8px;height:8px;transform:rotate(45deg);border:1px solid #C9A55C}
+.y-ph{display:flex;align-items:center;justify-content:center;text-align:center;padding:12px;box-sizing:border-box;color:#A8A08C;font-size:12px;letter-spacing:.08em;border:1px dashed rgba(201,165,92,.45);background:repeating-linear-gradient(135deg,#1B1813 0 12px,#17140F 12px 24px)}
+.y-footer{border-top:1px solid rgba(201,165,92,.28);background:#0A0908;padding:56px 0 28px}
+.y-footer-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px}
+.y-fnav{display:grid;grid-template-columns:repeat(2,auto);gap:0 32px}
+.y-fnav a{display:flex;align-items:center;min-height:40px;color:#ECE6D6;text-decoration:none;font-size:13px}
+.y-fnav a:hover{color:#C9A55C}
+.y-copy{margin-top:40px;font-size:11px;color:#A8A08C;letter-spacing:.1em}
+.y-fade{animation:yFade 1s ease both}
+.y-d1{animation-delay:.15s}.y-d2{animation-delay:.3s}
+@keyframes yFade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.y-fade{animation:none}}
+@media (min-width:768px){.y-root{font-size:16px}.y-sec{padding:120px 0}.y-wrap{padding:0 40px}}
+.m-hero{position:relative;overflow:hidden;min-height:620px;display:flex;align-items:center;border-bottom:1px solid rgba(201,165,92,.28)}
+.m-hero-bg{position:absolute;inset:0}
+.m-hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,13,11,.96) 0%,rgba(14,13,11,.82) 55%,rgba(14,13,11,.55) 100%)}
+.m-compass{position:absolute;right:-120px;top:50%;transform:translateY(-50%);width:620px;height:620px;opacity:.28}
+.m-coord{position:absolute;left:20px;bottom:20px;font-family:'Shippori Mincho',serif;font-size:11px;letter-spacing:.3em;color:#C9A55C;opacity:.7}
+.m-catch{font-size:clamp(32px,6.4vw,64px);line-height:1.45;margin:20px 0 0}
+.m-logos{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(160px,100%),1fr));gap:16px}
+.m-logo{position:relative;height:88px;box-sizing:border-box;padding:14px 18px;display:flex;align-items:center;justify-content:center;background:#F6F2E8;border:1px solid #C9A55C}
+.m-logo::before{content:"";position:absolute;inset:3px;border:1px solid rgba(201,165,92,.45);pointer-events:none}
+.m-logo img{display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+@media (min-width:768px){.m-hero{min-height:720px}.m-coord{left:40px;bottom:32px}}
+</style>
+</head>
+<body>
+<div class="y-root">
+
+<header class="y-header">
+<div class="y-wrap y-header-in">
+<a href="index.html" class="y-logo">YODASOU<small>株式会社Yodasou</small></a>
+<nav aria-label="グローバルナビゲーション" class="y-nav">
+<a href="index.html" aria-current="page">トップ</a>
+<a href="about.html">会社概要</a>
+<a href="faq.html">よくある質問</a>
+<a href="contact.html">お問い合わせ</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="m-hero" aria-labelledby="hero-title">
+<div class="m-hero-bg" aria-hidden="true">
+<div class="y-ph" style="width: 100%; height: 100%; border: none; align-items: flex-end; justify-content: flex-end; padding: 24px">メインビジュアル画像（古地図・街並み／1920×1080）</div>
+</div>
+<svg class="m-compass" viewBox="0 0 200 200" fill="none" stroke="#C9A55C" stroke-width="0.6" aria-hidden="true">
+<circle cx="100" cy="100" r="96"></circle>
+<circle cx="100" cy="100" r="80" stroke-dasharray="2 3"></circle>
+<circle cx="100" cy="100" r="44"></circle>
+<path d="M100 4 L108 92 L196 100 L108 108 L100 196 L92 108 L4 100 L92 92 Z"></path>
+<path d="M100 30 L104 96 L170 100 L104 104 L100 170 L96 104 L30 100 L96 96 Z" transform="rotate(45 100 100)"></path>
+<path d="M100 4 V196 M4 100 H196"></path>
+</svg>
+<p class="m-coord" aria-hidden="true">N 35°41′ ・ E 139°44′ ・ KUDAN</p>
+<div class="y-wrap" style="position: relative; width: 100%; padding-top: 72px; padding-bottom: 96px">
+<p class="y-eyebrow y-fade">MYSTERY ・ TOWN ・ STORY</p>
+<h1 id="hero-title" class="y-h m-catch y-fade y-d1">その街には、<br>まだ誰も解いていない<br>物語がある。</h1>
+<p class="y-fade y-d2" style="max-width: 520px; margin: 28px 0 0; color: #D6CFBE">地図を片手に、見慣れた景色の奥へ。株式会社Yodasouは、謎解きを通して街に眠る魅力を掘り起こし、ご家族や仲間と楽しめる冒険をお届けしています。</p>
+</div>
+</section>
+
+<section id="events" class="y-sec" aria-labelledby="events-title">
+<div class="y-wrap">
+<div class="y-sechead">
+<p class="y-eyebrow">EVENTS</p>
+<h2 id="events-title" class="y-h y-h2">開催中・開催予定のイベント</h2>
+</div>
+
+<h3 class="e-sub">開催中</h3>
+<ul class="y-grid3" style="list-style: none; margin: 0; padding: 0">
+<li class="y-card">
+<svg viewBox="0 0 1200 900" style="display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; background: #0B0A08" role="img" aria-label="九段坂と消えた古地図の謎 キービジュアル">
+<defs>
+<radialGradient id="kvb-sky" cx="50%" cy="38%" r="55%"><stop offset="0%" stop-color="#3A2E17" stop-opacity=".9"></stop><stop offset="100%" stop-color="#0B0A08" stop-opacity="0"></stop></radialGradient>
+<radialGradient id="kvb-glow"><stop offset="0%" stop-color="#F3D58C" stop-opacity=".75"></stop><stop offset="100%" stop-color="#C9A55C" stop-opacity="0"></stop></radialGradient>
+<linearGradient id="kvb-road" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#1D1910"></stop><stop offset="100%" stop-color="#0E0D0B"></stop></linearGradient>
+<radialGradient id="kvb-gap" cx="50%" cy="50%" r="60%"><stop offset="0%" stop-color="#F3D58C" stop-opacity=".9"></stop><stop offset="70%" stop-color="#C9A55C" stop-opacity=".25"></stop><stop offset="100%" stop-color="#C9A55C" stop-opacity="0"></stop></radialGradient>
+<filter id="kvb-blur" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="12"></feGaussianBlur></filter>
+</defs>
+<rect width="1200" height="900" fill="url(#kvb-sky)"></rect>
+<path d="M60 900 L560 300 L640 300 L1140 900 Z" fill="url(#kvb-road)"></path>
+<g stroke="#C9A55C" fill="none">
+<path d="M60 900 L560 300" stroke-width="2" stroke-opacity=".8"></path>
+<path d="M1140 900 L640 300" stroke-width="2" stroke-opacity=".8"></path>
+<g stroke-width="1" stroke-opacity=".28">
+<path d="M102 870 H1098"></path><path d="M144 828 H1056"></path><path d="M180 784 H1020"></path><path d="M213 744 H987"></path><path d="M245 706 H955"></path><path d="M274 672 H926"></path><path d="M300 640 H900"></path><path d="M325 610 H875"></path><path d="M348 582 H852"></path><path d="M369 558 H831"></path><path d="M388 534 H812"></path><path d="M406 512 H794"></path><path d="M422 494 H778"></path><path d="M437 476 H763"></path><path d="M451 458 H749"></path><path d="M464 444 H736"></path><path d="M476 428 H724"></path><path d="M488 414 H712"></path><path d="M498 402 H702"></path><path d="M508 390 H692"></path>
+</g>
+</g>
+<g stroke="#C9A55C" stroke-opacity=".75">
+<path d="M135 810 V653" stroke-width="3"></path><path d="M1065 810 V653" stroke-width="3"></path>
+<path d="M250 672 V550" stroke-width="2.4"></path><path d="M950 672 V550" stroke-width="2.4"></path>
+<path d="M350 552 V461" stroke-width="1.8"></path><path d="M850 552 V461" stroke-width="1.8"></path>
+<path d="M430 456 V389" stroke-width="1.4"></path><path d="M770 456 V389" stroke-width="1.4"></path>
+<path d="M490 384 V336" stroke-width="1"></path><path d="M710 384 V336" stroke-width="1"></path>
+</g>
+<g fill="url(#kvb-glow)">
+<circle cx="135" cy="653" r="60"></circle><circle cx="1065" cy="653" r="60"></circle>
+<circle cx="250" cy="550" r="46"></circle><circle cx="950" cy="550" r="46"></circle>
+<circle cx="350" cy="461" r="35"></circle><circle cx="850" cy="461" r="35"></circle>
+<circle cx="430" cy="389" r="26"></circle><circle cx="770" cy="389" r="26"></circle>
+<circle cx="490" cy="336" r="19"></circle><circle cx="710" cy="336" r="19"></circle>
+</g>
+<g fill="#F6E2A6">
+<circle cx="135" cy="653" r="9"></circle><circle cx="1065" cy="653" r="9"></circle>
+<circle cx="250" cy="550" r="7"></circle><circle cx="950" cy="550" r="7"></circle>
+<circle cx="350" cy="461" r="5"></circle><circle cx="850" cy="461" r="5"></circle>
+<circle cx="430" cy="389" r="4"></circle><circle cx="770" cy="389" r="4"></circle>
+<circle cx="490" cy="336" r="3"></circle><circle cx="710" cy="336" r="3"></circle>
+</g>
+<g transform="translate(600 650) rotate(-7)">
+<path d="M-170 -120 L-60 -128 L-48 -112 L40 -126 L56 -108 L150 -118 L168 -40 L158 20 L172 110 L60 122 L46 104 L-40 120 L-56 104 L-160 116 L-150 40 L-172 -30 Z" fill="#E4D5B0"></path>
+<g fill="none" stroke="#5B4426" stroke-width="1.6">
+<path d="M-150 80 C -80 40, -40 10, 10 -20 S 90 -80, 140 -100"></path>
+<path d="M-160 -40 C -100 -30, -60 0, -20 50 S 20 100, 40 112"></path>
+<path d="M-120 -110 C -110 -60, -100 -20, -80 20"></path>
+</g>
+<path d="M-150 80 C -80 40, -40 10, 10 -20" fill="none" stroke="#9B2F1F" stroke-width="2.4" stroke-dasharray="2 8" stroke-linecap="round"></path>
+<g fill="#5B4426" opacity=".55">
+<rect x="-130" y="-20" width="34" height="24"></rect><rect x="-60" y="60" width="30" height="22"></rect><rect x="90" y="40" width="40" height="28"></rect>
+</g>
+<path d="M30 -60 L70 -76 L84 -54 L124 -60 L132 -24 L110 6 L120 40 L80 46 L60 24 L22 30 L10 -6 L-6 -30 Z" fill="#0B0A08"></path>
+<path d="M30 -60 L70 -76 L84 -54 L124 -60 L132 -24 L110 6 L120 40 L80 46 L60 24 L22 30 L10 -6 L-6 -30 Z" fill="url(#kvb-gap)" stroke="#F3D58C" stroke-opacity=".8" stroke-width="1.2"></path>
+</g>
+<rect x="24" y="24" width="1152" height="852" fill="none" stroke="#C9A55C" stroke-opacity=".55" stroke-width="1"></rect>
+<g stroke="#C9A55C" stroke-width="2" fill="none">
+<path d="M24 60 V24 H60"></path><path d="M1140 24 H1176 V60"></path><path d="M24 840 V876 H60"></path><path d="M1140 876 H1176 V840"></path>
+</g>
+<rect x="390" y="64" width="146" height="32" fill="none" stroke="#C9A55C" stroke-width="1"></rect>
+<text x="463" y="86" text-anchor="middle" font-family="'Noto Sans JP', sans-serif" font-size="15" font-weight="500" letter-spacing="3.6" fill="#E7C97E">周遊型謎解き</text>
+<text x="552" y="86" font-family="'Shippori Mincho', serif" font-size="14" letter-spacing="4.8" fill="#B39A62">N 35°41′ ・ E 139°44′</text>
+<text x="600" y="168" text-anchor="middle" font-family="'Shippori Mincho', serif" font-size="42" font-weight="700" letter-spacing="8.4" fill="#E7D6A8">九段坂と</text>
+<text x="600" y="262" text-anchor="middle" font-family="'Shippori Mincho', serif" font-size="76" font-weight="800" letter-spacing="6" fill="#E2C27A" opacity=".45" filter="url(#kvb-blur)">消えた古地図の謎</text>
+<text x="600" y="262" text-anchor="middle" font-family="'Shippori Mincho', serif" font-size="76" font-weight="800" letter-spacing="6" fill="#E2C27A">消えた古地図の謎</text>
+<text x="600" y="842" text-anchor="middle" font-family="'Shippori Mincho', serif" font-size="18" letter-spacing="5.4" fill="#D6C391">この地図には、あるはずのない道がある。</text>
+<text x="1140" y="842" text-anchor="end" font-family="'Shippori Mincho', serif" font-size="15" font-weight="700" letter-spacing="6" fill="#C9A55C">YODASOU</text>
+</svg>
+<div style="padding: 24px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; flex-wrap: wrap; gap: 8px"><span class="y-tag y-tag--fill">開催中</span><span class="y-tag">周遊型</span></div>
+<h4 class="y-h" style="margin: 0; font-size: 20px; line-height: 1.5">九段坂と消えた古地図の謎</h4>
+<dl class="e-meta"><dt>期間</dt><dd>2025/3/1~</dd><dt>会場</dt><dd>厳島神社</dd></dl>
+</div>
+</li>
+<li class="y-card">
+<svg viewBox="0 0 1200 900" style="display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; background: #0B0A08" role="img" aria-label="時計塔に残された七つの手紙 キービジュアル">
+<defs>
+<radialGradient id="kvc-sky" cx="50%" cy="62%" r="55%"><stop offset="0%" stop-color="#3A2E17" stop-opacity=".9"></stop><stop offset="100%" stop-color="#0B0A08" stop-opacity="0"></stop></radialGradient>
+<radialGradient id="kvc-glow"><stop offset="0%" stop-color="#F3D58C" stop-opacity=".35"></stop><stop offset="100%" stop-color="#C9A55C" stop-opacity="0"></stop></radialGradient>
+<filter id="kvc-blur" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="12"></feGaussianBlur></filter>
+<g id="kvc-env">
+<circle r="70" fill="url(#kvc-glow)"></circle>
+<rect x="-42" y="-28" width="84" height="56" fill="#E4D5B0" stroke="#5B4426" stroke-width="1.2"></rect>
+<path d="M-42 -28 L0 6 L42 -28" fill="none" stroke="#5B4426" stroke-width="1.4"></path>
+<circle cx="0" cy="6" r="8" fill="#9B2F1F"></circle>
+</g>
+</defs>
+<rect width="1200" height="900" fill="url(#kvc-sky)"></rect>
+<path d="M420 430 L600 330 L780 430 Z" fill="#14110C" stroke="#C9A55C" stroke-width="2" stroke-opacity=".8"></path>
+<path d="M600 330 V290" stroke="#C9A55C" stroke-width="2"></path>
+<circle cx="600" cy="284" r="6" fill="#C9A55C"></circle>
+<rect x="440" y="430" width="320" height="480" fill="#14110C" stroke="#C9A55C" stroke-width="2" stroke-opacity=".8"></rect>
+<g fill="none" stroke="#C9A55C" stroke-opacity=".35" stroke-width="1">
+<path d="M440 470 H760"></path><path d="M440 780 H760"></path>
+<path d="M500 840 V800 a20 20 0 0 1 40 0 V840 Z"></path><path d="M580 840 V800 a20 20 0 0 1 40 0 V840 Z"></path><path d="M660 840 V800 a20 20 0 0 1 40 0 V840 Z"></path>
+</g>
+<circle cx="600" cy="620" r="140" fill="#0E0D0B" stroke="#C9A55C" stroke-width="3"></circle>
+<circle cx="600" cy="620" r="124" fill="none" stroke="#C9A55C" stroke-opacity=".5" stroke-width="1" stroke-dasharray="2 6"></circle>
+<g stroke="#C9A55C" stroke-width="3" stroke-linecap="round">
+<path d="M600 500 V516"></path><path d="M600 724 V740"></path><path d="M480 620 H496"></path><path d="M704 620 H720"></path>
+</g>
+<g stroke="#C9A55C" stroke-width="1.6" stroke-opacity=".8" stroke-linecap="round">
+<path d="M660 516 L654 527"></path><path d="M704 560 L693 566"></path><path d="M704 680 L693 674"></path><path d="M660 724 L654 713"></path>
+<path d="M540 724 L546 713"></path><path d="M496 680 L507 674"></path><path d="M496 560 L507 566"></path><path d="M540 516 L546 527"></path>
+</g>
+<path d="M600 620 L548 566" stroke="#E2C27A" stroke-width="7" stroke-linecap="round"></path>
+<path d="M600 620 L578 520" stroke="#E2C27A" stroke-width="4" stroke-linecap="round"></path>
+<circle cx="600" cy="620" r="9" fill="#E2C27A"></circle>
+<use href="#kvc-env" transform="translate(190 440) rotate(-14)"></use>
+<use href="#kvc-env" transform="translate(120 630) rotate(9)"></use>
+<use href="#kvc-env" transform="translate(320 560) rotate(-20)"></use>
+<use href="#kvc-env" transform="translate(240 760) rotate(-5)"></use>
+<use href="#kvc-env" transform="translate(1010 450) rotate(13)"></use>
+<use href="#kvc-env" transform="translate(880 600) rotate(16)"></use>
+<use href="#kvc-env" transform="translate(1070 700) rotate(-8)"></use>
+<rect x="0" y="804" width="1200" height="96" fill="#0B0A08" opacity=".85"></rect>
+<rect x="24" y="24" width="1152" height="852" fill="none" stroke="#C9A55C" stroke-opacity=".55" stroke-width="1"></rect>
+<g stroke="#C9A55C" stroke-width="2" fill="none">
+<path d="M24 60 V24 H60"></path><path d="M1140 24 H1176 V60"></path><path d="M24 840 V876 H60"></path><path d="M1140 876 H1176 V840"></path>
+</g>
+<rect x="340" y="64" width="196" height="32" fill="none" stroke="#C9A55C" stroke-width="1"></rect>
+<text x="438" y="86" text-anchor="middle" font-family="'Noto Sans JP', sans-serif" font-size="15" font-weight="500" letter-spacing="3.6" fill="#E7C97E">商業施設タイアップ</text>
+<text x="552" y="86" font-family="'Shippori Mincho', serif" font-size="14" letter-spacing="4.8" fill="#B39A62">MYSTERY ・ CLOCK TOWER</text>
+<text x="600" y="168" text-anchor="middle" font-family="'Shippori Mincho', serif" font-size="42" font-weight="700" letter-spacing="8.4" fill="#E7D6A8">時計塔に残された</text>
+<text x="600" y="262" text-anchor="middle" font-family="'Shippori Mincho', serif" font-size="76" font-weight="800" letter-spacing="6" fill="#E2C27A" opacity=".45" filter="url(#kvc-blur)">七つの手紙</text>
+<text x="600" y="262" text-anchor="middle" font-family="'Shippori Mincho', serif" font-size="76" font-weight="800" letter-spacing="6" fill="#E2C27A">七つの手紙</text>
+<text x="600" y="848" text-anchor="middle" font-family="'Shippori Mincho', serif" font-size="18" letter-spacing="5.4" fill="#D6C391">鐘が鳴るまでに、すべての封を開けよ。</text>
+<text x="1140" y="848" text-anchor="end" font-family="'Shippori Mincho', serif" font-size="15" font-weight="700" letter-spacing="6" fill="#C9A55C">YODASOU</text>
+</svg>
+<div style="padding: 24px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; flex-wrap: wrap; gap: 8px"><span class="y-tag y-tag--fill">開催中</span><span class="y-tag">商業施設タイアップ</span></div>
+<h4 class="y-h" style="margin: 0; font-size: 20px; line-height: 1.5">時計塔に残された七つの手紙</h4>
+<dl class="e-meta"><dt>期間</dt><dd>2026/10/19~</dd><dt>会場</dt><dd>旧札幌農学校演武場</dd></dl>
+</div>
+</li>
+<li class="y-card">
+<svg viewBox="0 0 1200 900" style="display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; background: #0B0A08" role="img" aria-label="深夜二時の暗号放送 キービジュアル">
+<defs>
+<radialGradient id="kvr-sky" cx="50%" cy="60%" r="55%"><stop offset="0%" stop-color="#3A2E17" stop-opacity=".9"></stop><stop offset="100%" stop-color="#0B0A08" stop-opacity="0"></stop></radialGradient>
+<radialGradient id="kvr-dial"><stop offset="0%" stop-color="#F3D58C" stop-opacity=".35"></stop><stop offset="100%" stop-color="#C9A55C" stop-opacity="0"></stop></radialGradient>
+<filter id="kvr-blur" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="12"></feGaussianBlur></filter>
+</defs>
+<rect width="1200" height="900" fill="url(#kvr-sky)"></rect>
+<g fill="none" stroke="#C9A55C" stroke-linecap="round">
+<path d="M910.4 261.4 A40 40 0 0 1 938.6 310.4" stroke-width="2.4" stroke-opacity=".9"></path>
+<path d="M918.1 232.4 A70 70 0 0 1 967.6 318.1" stroke-width="2" stroke-opacity=".65"></path>
+<path d="M925.9 203.4 A100 100 0 0 1 996.6 325.9" stroke-width="1.6" stroke-opacity=".4"></path>
+<path d="M933.6 174.5 A130 130 0 0 1 1025.6 333.6" stroke-width="1.2" stroke-opacity=".22"></path>
+</g>
+<path d="M780 430 L900 300" stroke="#C9A55C" stroke-width="3"></path>
+<circle cx="900" cy="300" r="7" fill="#E2C27A"></circle>
+<g fill="#C9A55C" fill-opacity=".5">
+<rect x="130" y="360" width="24" height="6" rx="3"></rect><rect x="162" y="360" width="8" height="6" rx="3"></rect><rect x="178" y="360" width="8" height="6" rx="3"></rect><rect x="194" y="360" width="24" height="6" rx="3"></rect>
+<rect x="110" y="396" width="8" height="6" rx="3"></rect><rect x="126" y="396" width="24" height="6" rx="3"></rect><rect x="158" y="396" width="24" height="6" rx="3"></rect><rect x="190" y="396" width="8" height="6" rx="3"></rect><rect x="206" y="396" width="24" height="6" rx="3"></rect>
+<rect x="150" y="432" width="24" height="6" rx="3"></rect><rect x="182" y="432" width="8" height="6" rx="3"></rect><rect x="198" y="432" width="24" height="6" rx="3"></rect>
+<rect x="1010" y="430" width="8" height="6" rx="3"></rect><rect x="1026" y="430" width="24" height="6" rx="3"></rect><rect x="1058" y="430" width="8" height="6" rx="3"></rect>
+<rect x="1000" y="466" width="24" height="6" rx="3"></rect><rect x="1032" y="466" width="24" height="6" rx="3"></rect><rect x="1064" y="466" width="8" height="6" rx="3"></rect><rect x="1080" y="466" width="24" height="6" rx="3"></rect>
+<rect x="1030" y="502" width="8" height="6" rx="3"></rect><rect x="1046" y="502" width="8" height="6" rx="3"></rect><rect x="1062" y="502" width="24" height="6" rx="3"></rect>
+</g>
+<rect x="340" y="430" width="520" height="300" rx="28" fill="#16130D" stroke="#C9A55C" stroke-width="2.4"></rect>
+<rect x="356" y="446" width="488" height="268" rx="18" fill="none" stroke="#C9A55C" stroke-opacity=".35" stroke-width="1"></rect>
+<circle cx="476" cy="580" r="100" fill="#0E0D0B" stroke="#C9A55C" stroke-width="2"></circle>
+<g fill="none" stroke="#C9A55C" stroke-opacity=".45" stroke-width="1.2">
+<circle cx="476" cy="580" r="80"></circle><circle cx="476" cy="580" r="60"></circle><circle cx="476" cy="580" r="40"></circle><circle cx="476" cy="580" r="20"></circle>
+</g>
+<circle cx="720" cy="515" r="90" fill="url(#kvr-dial)"></circle>
+<rect x="620" y="478" width="200" height="74" rx="6" fill="#0B0A08" stroke="#C9A55C" stroke-width="1.6"></rect>
+<g stroke="#C9A55C" stroke-opacity=".7" stroke-width="1">
+<path d="M636 540 V532"></path><path d="M656 540 V535"></path><path d="M676 540 V532"></path><path d="M696 540 V535"></path><path d="M716 540 V532"></path><path d="M736 540 V535"></path><path d="M756 540 V532"></path><path d="M776 540 V535"></path><path d="M796 540 V532"></path>
+</g>
+<text x="720" y="518" text-anchor="middle" font-family="'Shippori Mincho', serif" font-size="26" font-weight="700" letter-spacing="3" fill="#E2C27A">AM 2:00</text>
+<path d="M806 484 V548" stroke="#F3D58C" stroke-width="2"></path>
+<g fill="#0E0D0B" stroke="#C9A55C" stroke-width="2">
+<circle cx="670" cy="640" r="30"></circle><circle cx="770" cy="640" r="30"></circle>
+</g>
+<path d="M670 640 L652 622" stroke="#E2C27A" stroke-width="3" stroke-linecap="round"></path>
+<path d="M770 640 L790 626" stroke="#E2C27A" stroke-width="3" stroke-linecap="round"></path>
+<path d="M400 730 V760 M800 730 V760" stroke="#C9A55C" stroke-width="3"></path>
+<rect x="24" y="24" width="1152" height="852" fill="none" stroke="#C9A55C" stroke-opacity=".55" stroke-width="1"></rect>
+<g stroke="#C9A55C" stroke-width="2" fill="none">
+<path d="M24 60 V24 H60"></path><path d="M1140 24 H1176 V60"></path><path d="M24 840 V876 H60"></path><path d="M1140 876 H1176 V840"></path>
+</g>
+<rect x="340" y="64" width="122" height="32" fill="none" stroke="#C9A55C" stroke-width="1"></rect>
+<text x="401" y="86" text-anchor="middle" font-family="'Noto Sans JP', sans-serif" font-size="15" font-weight="500" letter-spacing="3.6" fill="#E7C97E">オンライン</text>
+<text x="480" y="86" font-family="'Shippori Mincho', serif" font-size="14" letter-spacing="4.8" fill="#B39A62">ON AIR ・ MIDNIGHT FREQUENCY</text>
+<text x="600" y="168" text-anchor="middle" font-family="'Shippori Mincho', serif" font-size="42" font-weight="700" letter-spacing="8.4" fill="#E7D6A8">深夜二時の</text>
+<text x="600" y="262" text-anchor="middle" font-family="'Shippori Mincho', serif" font-size="76" font-weight="800" letter-spacing="6" fill="#E2C27A" opacity=".45" filter="url(#kvr-blur)">暗号放送</text>
+<text x="600" y="262" text-anchor="middle" font-family="'Shippori Mincho', serif" font-size="76" font-weight="800" letter-spacing="6" fill="#E2C27A">暗号放送</text>
+<text x="600" y="842" text-anchor="middle" font-family="'Shippori Mincho', serif" font-size="18" letter-spacing="5.4" fill="#D6C391">今夜、あの周波数で何かが始まる。</text>
+<text x="1140" y="842" text-anchor="end" font-family="'Shippori Mincho', serif" font-size="15" font-weight="700" letter-spacing="6" fill="#C9A55C">YODASOU</text>
+</svg>
+<div style="padding: 24px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; flex-wrap: wrap; gap: 8px"><span class="y-tag y-tag--fill">開催中</span><span class="y-tag">オンライン</span></div>
+<h4 class="y-h" style="margin: 0; font-size: 20px; line-height: 1.5">深夜二時の暗号放送</h4>
+<dl class="e-meta"><dt>期間</dt><dd>2020/9/21~</dd><dt>会場</dt><dd>オンライン開催</dd></dl>
+</div>
+</li>
+</ul>
+
+<h3 class="e-sub" style="margin-top: 64px">開催予定</h3>
+<ul class="y-grid3" style="list-style: none; margin: 0; padding: 0; grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr))">
+<li class="y-card">
+<svg viewBox="0 0 1200 900" style="display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; background: #0B0A08" role="img" aria-label="ROUTE ENIGMA 夜明けの鍵を奪い合え キービジュアル">
+<defs>
+<linearGradient id="kve-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0B0A08"></stop><stop offset="55%" stop-color="#15110B"></stop><stop offset="88%" stop-color="#4A2E14"></stop><stop offset="100%" stop-color="#6B3F18"></stop></linearGradient>
+<radialGradient id="kve-sun" cx="50%" cy="100%" r="60%"><stop offset="0%" stop-color="#F3C27A" stop-opacity=".75"></stop><stop offset="45%" stop-color="#C98A45" stop-opacity=".3"></stop><stop offset="100%" stop-color="#C98A45" stop-opacity="0"></stop></radialGradient>
+<radialGradient id="kve-keyglow"><stop offset="0%" stop-color="#F3D58C" stop-opacity=".35"></stop><stop offset="100%" stop-color="#C9A55C" stop-opacity="0"></stop></radialGradient>
+<filter id="kve-blur" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="12"></feGaussianBlur></filter>
+</defs>
+<rect width="1200" height="900" fill="url(#kve-sky)"></rect>
+<ellipse cx="600" cy="820" rx="620" ry="260" fill="url(#kve-sun)"></ellipse>
+<g fill="#C9A55C" fill-opacity=".55">
+<circle cx="150" cy="330" r="1.6"></circle><circle cx="260" cy="300" r="1.2"></circle><circle cx="980" cy="320" r="1.6"></circle><circle cx="1080" cy="380" r="1.2"></circle><circle cx="90" cy="440" r="1.2"></circle><circle cx="1120" cy="300" r="1"></circle>
+</g>
+<path d="M0 900 V742 H50 V716 H96 V742 H128 V690 H170 V742 H210 V724 H250 V700 H286 V742 H330 V712 H372 V742 H420 V726 H460 V742 H520 V706 H556 V742 H600 V720 H640 V742 H690 V698 H732 V742 H780 V716 H826 V742 H870 V688 H912 V742 H950 V722 H996 V742 H1040 V704 H1080 V742 H1120 V720 H1160 V742 H1200 V900 Z" fill="#0B0A08"></path>
+<path d="M0 742 H50 V716 H96 V742 H128 V690 H170 V742 H210 V724 H250 V700 H286 V742 H330 V712 H372 V742 H420 V726 H460 V742 H520 V706 H556 V742 H600 V720 H640 V742 H690 V698 H732 V742 H780 V716 H826 V742 H870 V688 H912 V742 H950 V722 H996 V742 H1040 V704 H1080 V742 H1120 V720 H1160 V742 H1200" fill="none" stroke="#E2B46A" stroke-opacity=".7" stroke-width="1.4"></path>
+<path d="M40 650 L170 600 L260 640 L330 566 L372 528" fill="none" stroke="#C9A55C" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M1160 610 L1040 650 L940 566 L850 610 L790 556" fill="none" stroke="#E4D5B0" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="18 10"></path>
+<g fill="#0B0A08" stroke-width="3.5">
+<circle cx="170" cy="600" r="10" stroke="#C9A55C"></circle><circle cx="260" cy="640" r="10" stroke="#C9A55C"></circle><circle cx="330" cy="566" r="10" stroke="#C9A55C"></circle>
+<circle cx="1040" cy="650" r="10" stroke="#E4D5B0"></circle><circle cx="940" cy="566" r="10" stroke="#E4D5B0"></circle><circle cx="850" cy="610" r="10" stroke="#E4D5B0"></circle>
+</g>
+<circle cx="590" cy="520" r="230" fill="url(#kve-keyglow)"></circle>
+<g fill="none" stroke="#E2C27A" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="440" cy="520" r="62" stroke-width="7"></circle>
+<circle cx="440" cy="520" r="34" stroke-width="2.5"></circle>
+<path d="M440 486 L452 520 L440 554 L428 520 Z M406 520 L440 508 L474 520 L440 532 Z" stroke-width="2"></path>
+<path d="M502 520 H770" stroke-width="14"></path>
+<path d="M516 498 V542 M534 504 V536" stroke-width="5"></path>
+<path d="M700 527 V578 H722 V556 H740 V590 H770 V527" stroke-width="7"></path>
+</g>
+<circle cx="440" cy="520" r="6" fill="#E2C27A"></circle>
+<rect x="24" y="24" width="1152" height="852" fill="none" stroke="#C9A55C" stroke-opacity=".55" stroke-width="1"></rect>
+<g stroke="#C9A55C" stroke-width="2" fill="none">
+<path d="M24 60 V24 H60"></path><path d="M1140 24 H1176 V60"></path><path d="M24 840 V876 H60"></path><path d="M1140 876 H1176 V840"></path>
+</g>
+<rect x="452" y="64" width="84" height="32" fill="none" stroke="#C9A55C" stroke-width="1"></rect>
+<text x="494" y="86" text-anchor="middle" font-family="'Noto Sans JP', sans-serif" font-size="15" font-weight="500" letter-spacing="3.6" fill="#E7C97E">周遊型</text>
+<text x="552" y="86" font-family="'Shippori Mincho', serif" font-size="14" letter-spacing="4.8" fill="#B39A62">TOKYO 23 WARDS</text>
+<text x="600" y="206" text-anchor="middle" font-family="'Shippori Mincho', serif" font-size="88" font-weight="800" letter-spacing="10" fill="#E2C27A" opacity=".45" filter="url(#kve-blur)">ROUTE ENIGMA</text>
+<text x="600" y="206" text-anchor="middle" font-family="'Shippori Mincho', serif" font-size="88" font-weight="800" letter-spacing="10" fill="#E2C27A">ROUTE ENIGMA</text>
+<text x="600" y="276" text-anchor="middle" font-family="'Shippori Mincho', serif" font-size="38" font-weight="700" letter-spacing="7" fill="#E7D6A8">〜夜明けの鍵を奪い合え〜</text>
+<text x="600" y="848" text-anchor="middle" font-family="'Shippori Mincho', serif" font-size="18" letter-spacing="5.4" fill="#F1E3BE">夜が明ける前に、鍵を手にするのは誰だ。</text>
+<text x="1140" y="848" text-anchor="end" font-family="'Shippori Mincho', serif" font-size="15" font-weight="700" letter-spacing="6" fill="#E2C27A">YODASOU</text>
+</svg>
+<div style="padding: 24px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; flex-wrap: wrap; gap: 8px"><span class="y-tag">開催予定</span><span class="y-tag">周遊型</span></div>
+<h4 class="y-h" style="margin: 0; font-size: 20px; line-height: 1.5">ROUTE ENIGMA <br>〜夜明けの鍵を奪い合え〜</h4>
+<dl class="e-meta"><dt>期間</dt><dd>2026/11/16,17,24,30</dd><dt>会場</dt><dd>東京23区エリア</dd></dl>
+</div>
+</li>
+</ul>
+</div>
+</section>
+
+<section class="y-sec" aria-labelledby="logos-title" style="background: rgba(10,9,8,.7); border-top: 1px solid rgba(201,165,92,.18)">
+<div class="y-wrap">
+<div class="y-sechead">
+<p class="y-eyebrow">PARTNERS</p>
+<h2 id="logos-title" class="y-h y-h2">導入実績</h2>
+</div>
+<ul class="m-logos" style="list-style: none; margin: 0; padding: 0">
+<li class="m-logo"><img src="/_blob/27ca62fc216407244b094f99c4cb6830" alt="JR東日本"></li>
+<li class="m-logo"><img src="/_blob/fe2a5a93823de2083852f242a098b281" alt="イオン"></li>
+<li class="m-logo"><img src="/_blob/6d261df8b242b07e078c97b9dafba4cd" alt="トムス・エンタテインメント"></li>
+<li class="m-logo"><img src="/_blob/c13a040bbe579306251ad15e5d37dbbb" alt="博物館明治村"></li>
+<li class="m-logo"><img src="/_blob/124a8cefe71bbdbc82cc1dcebccc11fa" alt="京都水族館"></li>
+<li class="m-logo"><img src="/_blob/4a35ce894198cf74d6d71337b63eaf92" alt="ザ・キャピトルホテル 東急"></li>
+</ul>
+</div>
+</section>
+</main>
+
+<footer class="y-footer">
+<div class="y-wrap y-footer-in">
+<div>
+<a href="index.html" class="y-logo">YODASOU<small>株式会社Yodasou</small></a>
+<p class="y-muted" style="margin: 12px 0 0; font-size: 13px; line-height: 1.9">〒102-0073<br>東京都千代田区九段北１丁目１４−２０ Fit九段ビル</p>
+</div>
+<nav aria-label="フッターナビゲーション" class="y-fnav">
+<a href="index.html">トップ</a>
+<a href="about.html">会社概要</a>
+<a href="faq.html">よくある質問</a>
+<a href="contact.html">お問い合わせ</a>
+</nav>
+</div>
+<p class="y-wrap y-copy">© 株式会社Yodasou</p>
+</footer>
+
+</div>
+</body>
+</html>
