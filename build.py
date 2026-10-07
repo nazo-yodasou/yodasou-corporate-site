@@ -24,6 +24,8 @@ def convert(src: str, out: str) -> str:
     depth = "../" if "/" in out else ""
     for s, d in PAGES.items():
         body = body.replace(f'href="{s}"', f'href="{depth}{d}"')
+    # キャンバスにアップロードした画像（/_blob/<id>）は assets/<id>.png に置き換える
+    body = re.sub(r'/_blob/([0-9a-f]{32})', lambda m: f"{depth}assets/{m.group(1)}.png", body)
     lang = re.search(r'<html lang="([^"]+)"', src).group(1)
     return f'<!doctype html>\n<html lang="{lang}">\n<head>{head.rstrip()}\n{helmet}\n</head>\n<body>\n{body}\n</body>\n</html>\n'
 
