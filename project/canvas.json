@@ -1,0 +1,108 @@
+{
+  "v": 3,
+  "attachments": {},
+  "boards": {
+    "About.dc.html": {
+      "expand": "fill",
+      "h": 2700,
+      "is_interactive": true,
+      "title": "会社概要（about）",
+      "w": 1440,
+      "x": 1520,
+      "y": 0
+    },
+    "Contact.dc.html": {
+      "expand": "fill",
+      "h": 2100,
+      "is_interactive": true,
+      "title": "お問い合わせ（contact）",
+      "w": 1440,
+      "x": 4560,
+      "y": 0
+    },
+    "Faq.dc.html": {
+      "expand": "fill",
+      "h": 2200,
+      "is_interactive": true,
+      "title": "よくある質問（faq）",
+      "w": 1440,
+      "x": 3040,
+      "y": 0
+    },
+    "KV-Clock.dc.html": {
+      "h": 900,
+      "title": "KV：時計塔に残された七つの手紙（1200×900）",
+      "w": 1200,
+      "x": 2560,
+      "y": 3700
+    },
+    "KV-Kudan-A.dc.html": {
+      "h": 900,
+      "title": "KV案A：古地図（1200×900）",
+      "w": 1200,
+      "x": 0,
+      "y": 3700
+    },
+    "KV-Kudan-B.dc.html": {
+      "h": 900,
+      "title": "KV案B：夜の九段坂（1200×900）",
+      "w": 1200,
+      "x": 1280,
+      "y": 3700
+    },
+    "KV-Radio.dc.html": {
+      "h": 900,
+      "title": "KV：深夜二時の暗号放送（1200×900）",
+      "w": 1200,
+      "x": 3840,
+      "y": 3700
+    },
+    "KV-RouteEnigma.dc.html": {
+      "h": 900,
+      "title": "KV：ROUTE ENIGMA〜夜明けの鍵を奪い合え〜（1200×900）",
+      "w": 1200,
+      "x": 5120,
+      "y": 3700
+    },
+    "Main.dc.html": {
+      "expand": "fill",
+      "h": 3200,
+      "is_interactive": true,
+      "title": "トップ（index）",
+      "w": 1440,
+      "x": 0,
+      "y": 0
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-10-07T18:45:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "notes": {
+    "kvtitle": {
+      "kind": "title1",
+      "maxW": 6320,
+      "text": "イベントキービジュアル",
+      "w": 240,
+      "x": 0,
+      "y": 3420
+    }
+  },
+  "order": [
+    "Main.dc.html",
+    "About.dc.html",
+    "Faq.dc.html",
+    "Contact.dc.html",
+    "KV-Kudan-A.dc.html",
+    "KV-Kudan-B.dc.html",
+    "KV-Clock.dc.html",
+    "KV-Radio.dc.html",
+    "KV-RouteEnigma.dc.html"
+  ],
+  "pages": [],
+  "title": "株式会社Yodasou コーポレートサイト"
+}
